@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  cursor: none;
+  background: url("https://hdwallsource.com/img/2014/8/dark-universe-30104-30821-hd-wallpapers.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0, 0.5);
+  position: relative;
+}
+.universe{
+	margin: 0;
+	font-family: 'Montserrat';
+	color: white;
+	font-size: 4.3rem;
+	text-align: center;
+	letter-spacing: 0.7rem;
+	padding-top: 45vh;
+	text-shadow: 0 0 10px  orange;
+}
+.particle{
+  position: absolute;
+  box-shadow: 0 0 3px white;
+}
+.cursor{
+	position: fixed;
+	padding: 5px;
+	background: dodgerblue;
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px orange, 0 0 5px 4px orange;
+}
+.cursor::before{
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 400%;
+	left: 50%;
+	top: -150%;
+	background: white;
+	z-index: -1;
+}
+.cursor::after{
+	content: '';
+	position: absolute;
+	width: 400%;
+	height: 1px;
+	left: -150%;
+	top: 50%;
+	background: white;
+	z-index: -1;
+}
